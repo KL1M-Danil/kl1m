@@ -5,11 +5,312 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>KL1M - разработка сайтов</title>
-    
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-   
+    <section class="promo">
+      <div class="promo-wrap">
+        <div class="promo-nav">
+          <a href="#" class="promo-logo">kl<span>1</span>m</a>
+          <ul class="promo-nav-list">
+            <li class="promo-nav-item"><a href="">услуги</a></li>
+            <li class="promo-nav-item"><a href="">кейсы</a></li>
+            <li class="promo-nav-item"><a href="">контакты</a></li>
+          </ul>
+        </div>
 
+        <div class="promo-hero">
+          <div class="promo-sidebar">
+            <h1 class="promo-title">
+              Я - <span>Даниил Клименко</span>, помогу реализовать ваши цели в
+              сфере IT
+            </h1>
+
+            <ul class="promo-list">
+              <li class="promo-item">
+                <svg style="display: none;">
+                  <symbol id="sites-icon" viewBox="0 0 50 50">
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M44.6293 0H5.37071C2.40936 0 0 2.40936 0 5.37071V44.6293C0 47.5906 2.40936 50 5.37071 50H44.6293C47.5906 50 50 47.5906 50 44.6293V5.37071C50 2.40936 47.5906 0 44.6293 0V0ZM5.37071 2.92969H44.6293C45.9751 2.92969 47.0703 4.02489 47.0703 5.37071V11.8164H2.92969V5.37071C2.92969 4.02489 4.02489 2.92969 5.37071 2.92969ZM44.6293 47.0703H5.37071C4.02489 47.0703 2.92969 45.9751 2.92969 44.6293V14.7461H47.0703V44.6293C47.0703 45.9751 45.9751 47.0703 44.6293 47.0703Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M44.043 7.42188C44.043 8.23097 43.3872 8.88672 42.5781 8.88672C41.769 8.88672 41.1133 8.23097 41.1133 7.42188C41.1133 6.61278 41.769 5.95703 42.5781 5.95703C43.3872 5.95703 44.043 6.61278 44.043 7.42188Z"
+                        fill="#F85A40"
+                      />
+                      <path
+                        d="M38.1836 7.42188C38.1836 8.23097 37.5278 8.88672 36.7188 8.88672C35.9097 8.88672 35.2539 8.23097 35.2539 7.42188C35.2539 6.61278 35.9097 5.95703 36.7188 5.95703C37.5278 5.95703 38.1836 6.61278 38.1836 7.42188Z"
+                        fill="#F85A40"
+                      />
+                      <path
+                        d="M32.3242 7.42188C32.3242 8.23097 31.6685 8.88672 30.8594 8.88672C30.0503 8.88672 29.3945 8.23097 29.3945 7.42188C29.3945 6.61278 30.0503 5.95703 30.8594 5.95703C31.6685 5.95703 32.3242 6.61278 32.3242 7.42188Z"
+                        fill="#F85A40"
+                      />
+                      <path
+                        d="M42.5781 17.6758H7.42188C6.61278 17.6758 5.95703 18.3315 5.95703 19.1406V27.9297C5.95703 28.7388 6.61278 29.3945 7.42188 29.3945H42.5781C43.3872 29.3945 44.043 28.7388 44.043 27.9297V19.1406C44.043 18.3315 43.3872 17.6758 42.5781 17.6758ZM41.1133 26.4648H8.88672V20.6055H41.1133V26.4648Z"
+                        fill="#F85A40"
+                      />
+                      <path
+                        d="M32.1133 32H17.4648C16.6557 32 16 32.6557 16 33.4648V42.2539C16 43.063 16.6557 43.7188 17.4648 43.7188H32.1133C32.9224 43.7188 33.5781 43.063 33.5781 42.2539V33.4648C33.5781 32.6557 32.9224 32 32.1133 32ZM30.6484 40.7891H18.9297V34.9297H30.6484V40.7891Z"
+                        fill="#F85A40"
+                      />
+                    </g>
+                  </symbol>
+                </svg>
+                <svg class="promo-icon">
+                  <use xlink:href="#sites-icon"></use>
+                </svg>
+
+                <div class="promo-text">
+                  <h3 class="promo-subtitle">Сайты</h3>
+                  <ul class="promo-sublist">
+                    <li class="promo-subitem">
+                      <h4 class="promo-description">
+                        - разработка лэндингов, интернет магазинов
+                      </h4>
+                    </li>
+                    <li class="promo-subitem">
+                      <h4 class="promo-description">
+                        - подключение сторонних сервисов (аналитка, онлайн чаты)
+                      </h4>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="promo-item">
+                <svg style="display: none;">
+                  <symbol id="design-icon" viewBox="0 0 50 50">
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M42.8125 30.4375H35V7H42.8125V30.4375Z"
+                        fill="#F85A40"
+                      />
+                      <path
+                        d="M28.5713 13.2168C30.0602 15.7997 28.2043 19.0731 25.1865 19.0731C22.1611 19.0731 20.3163 15.7921 21.8006 13.2168L25.1865 7.35435L28.5713 13.2168Z"
+                        fill="#F85A40"
+                      />
+                      <path
+                        d="M11.3525 7.42188L15.2588 15.2344C14.3135 15.2344 8.39767 15.2344 7.44629 15.2344L11.3525 7.42188Z"
+                        fill="#F85A40"
+                      />
+                      <path
+                        d="M7.44629 15.2344V30.8594H15.2588V15.2344C14.3135 15.2344 8.39767 15.2344 7.44629 15.2344Z"
+                        fill="#F85A40"
+                      />
+                      <path
+                        d="M30.8594 33.7891C30.3204 33.7891 29.8828 34.2266 29.8828 34.7656C29.8828 35.3046 30.3204 35.7422 30.8594 35.7422C31.3984 35.7422 31.8359 35.3046 31.8359 34.7656C31.8359 34.2266 31.3984 33.7891 30.8594 33.7891Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M45.1172 0H4.88281C2.1904 0 0 2.1904 0 4.88281V34.7656C0 37.458 2.1904 39.6484 4.88281 39.6484H20.1172V44.1406H19.1406C17.8368 44.1406 16.6111 44.6487 15.6883 45.5711C14.7659 46.4939 14.2578 47.7196 14.2578 49.0234C14.2578 49.5628 14.695 50 15.2344 50H34.7656C35.305 50 35.7422 49.5628 35.7422 49.0234C35.7422 46.331 33.5518 44.1406 30.8594 44.1406H29.8828V39.6484H45.1172C47.8096 39.6484 50 37.458 50 34.7656V4.88281C50 2.1904 47.8096 0 45.1172 0ZM4.88281 1.95312H45.1172C46.7327 1.95312 48.0469 3.26729 48.0469 4.88281V29.8828H43.5547V7.42188C43.5547 6.88248 43.1175 6.44531 42.5781 6.44531H34.7656C34.2262 6.44531 33.7891 6.88248 33.7891 7.42188V29.8828H28.9009C28.8906 28.8727 28.8643 27.877 28.8223 26.9112C28.6514 22.934 28.2619 20.2698 28.0594 19.0979C30.0743 17.6144 30.6244 14.8647 29.3926 12.7285L26.0078 6.86607C25.8331 6.56395 25.5108 6.37779 25.1621 6.37779C24.8131 6.37779 24.4907 6.56395 24.3164 6.86607L20.9301 12.7289C19.7689 14.743 20.1805 17.3519 22.0047 18.8915C21.7934 20.06 21.3669 22.8195 21.1815 26.9093C21.1376 27.8854 21.1098 28.8818 21.0991 29.8828H16.2109V15.2344C16.2109 15.0795 16.1743 14.9384 16.1144 14.8129C16.1118 14.8079 16.1102 14.8026 16.1079 14.7976L12.2017 6.98509C12.0361 6.65436 11.6982 6.44531 11.3281 6.44531C10.9581 6.44531 10.6201 6.65436 10.4546 6.98509L6.54831 14.7976C6.54602 14.8026 6.54449 14.8079 6.54221 14.8129C6.48117 14.9395 6.44531 15.0829 6.44531 15.2344V29.8828H1.95312V4.88281C1.95312 3.26729 3.26729 1.95312 4.88281 1.95312ZM35.7422 29.8828V8.39844H41.6016V10.3516H40.625C40.0856 10.3516 39.6484 10.7887 39.6484 11.3281C39.6484 11.8675 40.0856 12.3047 40.625 12.3047H41.6016V15.2344H40.625C40.0856 15.2344 39.6484 15.6715 39.6484 16.2109C39.6484 16.7503 40.0856 17.1875 40.625 17.1875H41.6016V20.1172H40.625C40.0856 20.1172 39.6484 20.5544 39.6484 21.0938C39.6484 21.6331 40.0856 22.0703 40.625 22.0703H41.6016V25.9766H40.625C40.0856 25.9766 39.6484 26.4137 39.6484 26.9531C39.6484 27.4925 40.0856 27.9297 40.625 27.9297H41.6016V29.8828H35.7422ZM25.1621 20.0497C25.5169 20.0497 25.8701 20.0089 26.2157 19.9326C26.3969 21.0941 26.6632 23.1495 26.8208 25.9766H23.1857C23.3509 23.1514 23.6298 21.064 23.8224 19.8631C24.255 19.9863 24.7055 20.0497 25.1621 20.0497ZM25.1621 18.0965C22.9301 18.0965 21.4909 15.6673 22.6219 13.7051L25.1621 9.30748L27.7008 13.7047C28.8277 15.659 27.4082 18.0965 25.1621 18.0965ZM23.0961 27.9297H26.9066C26.9272 28.5713 26.9413 29.224 26.9482 29.8828H23.0522C23.0595 29.2282 23.0743 28.5755 23.0961 27.9297ZM12.3047 29.8828V16.2109H14.2578V29.8828H12.3047ZM8.39844 29.8828V16.2109H10.3516V23.5V29.8828H8.39844ZM9.00192 14.2578L11.3281 9.60541L13.6543 14.2578H9.00192ZM33.6216 48.0469H24.9994H16.3773C16.5207 47.6398 16.7549 47.2668 17.0692 46.9521C17.6231 46.3985 18.3586 46.0938 19.1406 46.0938H30.8594C32.1327 46.0938 33.2188 46.9101 33.6216 48.0469ZM27.9297 44.1406H22.0703V39.6484H27.9297V44.1406ZM45.1172 37.6953H4.88281C3.26729 37.6953 1.95312 36.3811 1.95312 34.7656V31.8359H48.0469V34.7656C48.0469 36.3811 46.7327 37.6953 45.1172 37.6953Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M26.9531 33.7891H21.0938C20.5544 33.7891 20.1172 34.2262 20.1172 34.7656C20.1172 35.305 20.5544 35.7422 21.0938 35.7422H26.9531C27.4925 35.7422 27.9297 35.305 27.9297 34.7656C27.9297 34.2262 27.4925 33.7891 26.9531 33.7891Z"
+                        fill="white"
+                      />
+                    </g>
+                  </symbol>
+                </svg>
+
+                <svg class="promo-icon">
+                  <use xlink:href="#design-icon"></use>
+                </svg>
+
+                <div class="promo-text">
+                  <h3 class="promo-subtitle">Дизайн</h3>
+                  <ul class="promo-sublist">
+                    <li class="promo-subitem">
+                      <h4 class="promo-description">- логотипы</h4>
+                    </li>
+                    <li class="promo-subitem">
+                      <h4 class="promo-description">
+                        - афиши и рекламные баннеры
+                      </h4>
+                    </li>
+                    <li class="promo-subitem">
+                      <h4 class="promo-description">
+                        - макеты для сайтов
+                      </h4>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="promo-item">
+                <svg style="display: none;">
+                  <symbol id="cybersafty-icon" viewBox="0 0 50 50">
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M45.2824 5.91308C39.7884 5.91308 29.7909 4.79433 26.6596 0.670997C26.1273 -0.165038 24.9627 -0.239452 24.3268 0.558594C20.6398 4.68086 10.6196 5.91308 4.71747 5.91308C3.90848 5.91308 3.25262 6.57139 3.25262 7.38349V30.9095C3.25262 41.5053 15.4498 47.9783 24.6897 49.991C25.8831 50.2503 46.7472 44.9651 46.7472 30.9095V7.38349C46.7472 6.57148 46.0915 5.91308 45.2824 5.91308ZM43.8176 30.9095C43.8176 41.9518 27.4753 46.4289 25 47.0428C22.5246 46.4289 6.18241 41.9517 6.18241 30.9095V8.83711C17.494 8.57597 23.1351 5.31767 25.3779 3.55146C29.8967 7.54824 37.7993 8.70049 43.8177 8.8374V30.9095H43.8176Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M17.6804 19.0975V23.5576H16.2109C15.402 23.5576 14.7461 24.2159 14.7461 25.028V36.791C14.7461 37.603 15.402 38.2614 16.2109 38.2614H33.7891C34.598 38.2614 35.2539 37.6031 35.2539 36.791V25.0279C35.2539 24.2159 34.598 23.5575 33.7891 23.5575H20.6101V19.0974C20.6101 16.7996 22.4198 14.7352 25.0442 14.7352C27.4404 14.7352 29.3899 16.6921 29.3899 19.0974C29.3899 19.9094 30.0458 20.5678 30.8548 20.5678C31.6638 20.5678 32.3196 19.9095 32.3196 19.0974C32.3196 15.0706 29.0559 11.7945 25.0442 11.7945C20.7787 11.7946 17.6804 15.2033 17.6804 19.0975ZM32.3242 35.3205H17.6758V26.4982H32.3242V35.3205Z"
+                        fill="#F85A40"
+                      />
+                      <path
+                        d="M25 32.3799C25.809 32.3799 26.4648 31.7215 26.4648 30.9095C26.4648 30.0974 25.809 29.4391 25 29.4391C24.191 29.4391 23.5352 30.0974 23.5352 30.9095C23.5352 31.7215 24.191 32.3799 25 32.3799Z"
+                        fill="white"
+                      />
+                    </g>
+                  </symbol>
+                </svg>
+
+                <svg class="promo-icon-cybersafty">
+                  <use xlink:href="#cybersafty-icon"></use>
+                </svg>
+
+                <div class="promo-text">
+                  <h3 class="promo-subtitle">Кибербезопасность</h3>
+                  <ul class="promo-sublist">
+                    <li class="promo-subitem">
+                      <h4 class="promo-description">
+                        - информационная защита вашего бизнеса
+                      </h4>
+                    </li>
+                    <li class="promo-subitem">
+                      <h4 class="promo-description">
+                        - установка специального оборудование (системы охранной
+                        сигнализации, камер видеонаблюдения)
+                      </h4>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="promo-sidebar">
+            <img
+              class="promo-img-elipse"
+              src="/images/promo-elipse.png"
+              alt="elipse"
+            />
+            <img
+              class="promo-img-shadow"
+              src="/images/promo-shadow.png"
+              alt="shadow"
+            />
+            <img
+              class="promo-img-mockup animated infinite bounce slower"
+              src="/images/promo-mockup.png"
+              alt="mockup"
+            />
+
+            <a href="" class="promo-btn">позвонить</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="border-for-wrap"></div>
+
+    <section class="cases">
+      <div class="cases-wrap">
+        <h2 class="cases-title">Кейсы</h2>
+
+        <button class="cases-btn-sidebar btn-sites" autofocus>сайты</button>
+        <div class="slider-box-sites">
+          <div class="cases-slider cases-slider-web">
+            <div class="cases-slider-item sellcars">
+              <p class="cases-slider-name">sellcars.com.ua</p>
+            </div>
+            <div class="cases-slider-item special4you">
+              <p class="cases-slider-name">special4you-mgmt.com</p>
+            </div>
+            <div class="cases-slider-item kozak-fest">
+              <p class="cases-slider-name">kozak-fest.com.ua</p>
+            </div>
+            <div class="cases-slider-item sellcars">
+              <p class="cases-slider-name">sellcars.com.ua</p>
+            </div>
+            <div class="cases-slider-item special4you">
+              <p class="cases-slider-name">special4you-mgmt.com</p>
+            </div>
+            <div class="cases-slider-item kozak-fest">
+              <p class="cases-slider-name">kozak-fest.com.ua</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-box-design">
+          <button class="cases-btn-sidebar btn-design">дизайн</button>
+          <div class="cases-slider-design">
+            <div class="cases-slider-item sellcars-d">
+              <p class="cases-slider-name">SellCars</p>
+            </div>
+            <div class="cases-slider-item goodway">
+              <p class="cases-slider-name">GoodWay</p>
+            </div>
+            <div class="cases-slider-item robingood">
+              <p class="cases-slider-name">RobinGood</p>
+            </div>
+            <div class="cases-slider-item sellcars-d">
+              <p class="cases-slider-name">SellCars</p>
+            </div>
+            <div class="cases-slider-item goodway">
+              <p class="cases-slider-name">GoodWay</p>
+            </div>
+            <div class="cases-slider-item robingood">
+              <p class="cases-slider-name">RobinGood</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-wrap">
+        <h2 class="about-title">Почему именно я?</h2>
+        <div class="about-photo">
+          <img src="/images/about1.png" alt="" />
+          <img src="/images/about2.png" alt="" />
+          <img src="/images/about3.png" alt="" />
+
+        </div>
+        <div class="about-text">
+          <ul class="about-list">
+            <li class="about-item"></li>
+            <li class="about-item"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <i></i>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
