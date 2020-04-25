@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
@@ -27,10 +28,21 @@
       <div class="promo-wrap">
         <div class="promo-nav">
           <a href="#" class="promo-logo">kl<span>1</span>m</a>
+          <div class="promo-nav-burger">
+            <!-- <img
+              src="https://image.flaticon.com/icons/svg/2099/2099103.svg"
+              alt=""
+            /> -->
+          </div>
           <ul class="promo-nav-list">
             <li class="promo-nav-item"><a href="">услуги</a></li>
-            <li class="promo-nav-item"><a href="">кейсы</a></li>
-            <li class="promo-nav-item"><a href="">контакты</a></li>
+            <li class="promo-nav-item"><a href="#cases">кейсы</a></li>
+            <li class="promo-nav-item"><a href="#about">контакты</a></li>
+          </ul>
+          <ul class="promo-nav-list-mobile nav-closed">
+            <li class="promo-nav-item"><a href="">услуги</a></li>
+            <li class="promo-nav-item"><a href="#cases">кейсы</a></li>
+            <li class="promo-nav-item"><a href="#about">контакты</a></li>
           </ul>
         </div>
 
@@ -40,6 +52,24 @@
               Я - <span>Даниил Клименко</span>, помогу реализовать ваши цели в
               сфере IT
             </h1>
+
+            <div class="promo-macbook">
+              <img
+                class="promo-img-elipse"
+                src="/images/promo-elipse2.png"
+                alt="elipse"
+              />
+              <img
+                class="promo-img-shadow"
+                src="/images/promo-shadow.png"
+                alt="shadow"
+              />
+              <img
+                class="promo-img-mockup animated infinite bounce slower"
+                src="/images/promo-mockup.png"
+                alt="mockup"
+              />
+            </div>
 
             <ul class="promo-list">
               <li class="promo-item">
@@ -199,7 +229,7 @@
           <div class="promo-sidebar">
             <img
               class="promo-img-elipse"
-              src="/images/promo-elipse.png"
+              src="/images/promo-elipse2.png"
               alt="elipse"
             />
             <img
@@ -221,11 +251,11 @@
 
     <div class="border-for-wrap"></div>
 
-    <section class="cases">
+    <section class="cases" id="cases">
       <div class="cases-wrap">
         <h2 class="cases-title">Кейсы</h2>
 
-        <button class="cases-btn-sidebar btn-sites" autofocus>сайты</button>
+        <button class="cases-btn-sidebar btn-sites">сайты</button>
         <div class="slider-box-sites">
           <div class="cases-slider cases-slider-web">
             <div class="cases-slider-item sellcars">
@@ -275,25 +305,145 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-wrap">
         <h2 class="about-title">Почему именно я?</h2>
-        <div class="about-photo">
-          <img src="/images/about1.png" alt="" />
-          <img src="/images/about2.png" alt="" />
-          <img src="/images/about3.png" alt="" />
+        <div class="about-box">
+          <div class="about-photo">
+            <div class="about-photo-item">
+              <span class="about-photo-text">📍Kiev</span>
+            </div>
+            <div class="about-photo-item">
+              <span class="about-photo-text">📍Lviv</span>
+            </div>
+            <div class="about-photo-item">
+              <span class="about-photo-text">📍Dnepr</span>
+            </div>
+            <div class="about-photo-item">
+              <span class="about-photo-text">📍Kharkiv</span>
+            </div>
+            <div class="about-photo-item">
+              <span class="about-photo-text">📍Odessa</span>
+            </div>
+          </div>
 
-        </div>
-        <div class="about-text">
-          <ul class="about-list">
-            <li class="about-item"></li>
-            <li class="about-item"></li>
-          </ul>
+          <div class="about-text">
+            <ul class="about-list">
+              <li class="about-item">
+                <p class="about-counter">1</p>
+                <ul class="about-desc">
+                  <li class="about-desc-item">- доступно (цены от 100$)</li>
+                  <li class="about-desc-item">- быстро (landing от 3 дней)</li>
+                  <li class="about-desc-item">- катчественно</li>
+                </ul>
+              </li>
+              <li class="about-item">
+                <p class="about-counter">2</p>
+                <ul class="about-desc">
+                  <li class="about-desc-item">- доступно (цены от 100$)</li>
+                  <li class="about-desc-item">- быстро (landing от 3 дней)</li>
+                </ul>
+              </li>
+            </ul>
+
+            <p class="about-techname">Используемые мною технологии:</p>
+            <ul class="about-techbox">
+              <li class="about-techimg">
+                <img src="/images/i-html.svg" alt="" />
+              </li>
+              <li class="about-techimg">
+                <img src="/images/i-css.svg" alt="" />
+              </li>
+              <li class="about-techimg">
+                <img src="/images/i-js.svg" alt="" />
+              </li>
+              <li class="about-techimg">
+                <img src="/images/i-bootstrap.svg" alt="" />
+              </li>
+              <li class="about-techimg">
+                <img src="/images/i-sass.svg" alt="" />
+              </li>
+              <li class="about-techimg">
+                <img src="/images/i-gulp.svg" alt="" />
+              </li>
+            </ul>
+
+            <div id="modal-container-goit">
+              <div class="modal-background">
+                <div class="modal">
+                  <img src="/images/cert-goit.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div id="modal-container-cisco">
+              <div class="modal-background">
+                <div class="modal">
+                  <img src="/images/cert-cisco.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="about-sidebar">
+              <p class="about-techname">Мои сертификаты</p>
+              <div class="about-btn-box">
+                <button id="one" class="about-btn about-btn-goit">GoIt</button>
+                <button id="one" class="about-btn about-btn-cisco">
+                  Cisco
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <i></i>
+    <section class="contacts">
+      <div class="contacts-wrap">
+        <h2 class="contacts-title">Контакты</h2>
+        <ul class="contacts-box">
+          <li>
+            <a href="tel:+380955616691">
+              <img
+                src="https://image.flaticon.com/icons/svg/597/597177.svg"
+                alt=""
+              />
+              <span class="contacts-text">+380 95 561 66 91</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:kl1m.done@gmail.com">
+              <img
+                src="https://image.flaticon.com/icons/svg/482/482947.svg"
+                alt=""
+              />
+              <span class="contacts-text">kl1m.done@gmail.com</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="contacts-mess">
+          <li>
+            <a href="tg://resolve?domain=kl1m_d" class="conatcts-mess-link">
+              <span>telegram</span>
+              <img src="/images/i-telegram.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="viber://add?number=380955616691"
+              class="conatcts-mess-link"
+            >
+              <span>viber</span>
+              <img src="/images/i-viber.png" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <span>Klimenko Danil © 2020</span>
+    </footer>
 
     <script
       type="text/javascript"

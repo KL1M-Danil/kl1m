@@ -26,9 +26,10 @@
   }
 
   &-btn-sidebar:focus {
-    background: $accent-color;
-    color: $font-color;
-    transition: 0.2s;
+    // background: $accent-color;
+    // color: $font-color;
+    // transition: 0.2s;
+    outline: none;
   }
 
   &-slider {
@@ -115,6 +116,7 @@
   position: absolute;
   padding: 0;
   content: none;
+  cursor: pointer;
 }
 
 .prev-arr {
@@ -155,4 +157,24 @@
 .robingood {
   background-image: url('/images/robingood.png');
   background-size: contain;
+}
+
+@media (max-width: 1480px) {
+  .cases {
+    &-wrap {
+      max-width: 1350px;
+    }
+
+    &-slider-name {
+      font-size: 23px;
+    }
+  }
+
+  .prev-arr {
+    transform: translateY(180px) translateX(-500px);
+  }
+
+  .next-arr {
+    transform: translateY(180px) translateX(500px);
+  }
 }

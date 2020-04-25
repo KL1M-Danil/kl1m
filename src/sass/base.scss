@@ -10,7 +10,8 @@ html {
 
 a {
   color: $font-color;
-  text-decoration: none;
+  text-decoration: none;  
+  outline-color: $accent-color;
 }
 
 ul {
@@ -20,4 +21,5 @@ ul {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  
 }
