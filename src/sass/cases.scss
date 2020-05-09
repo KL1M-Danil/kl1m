@@ -25,13 +25,6 @@
     margin: auto;
   }
 
-  &-btn-sidebar:focus {
-    // background: $accent-color;
-    // color: $font-color;
-    // transition: 0.2s;
-    outline: none;
-  }
-
   &-slider {
     display: flex;
     justify-content: center;
@@ -148,6 +141,12 @@
   background-position-y: 20px;
 }
 
+.rtk {
+  background-image: url('/images/rtkinua.png');
+  background-position-y: 70px;
+  background-size: contain;
+}
+
 .goodway {
   background-image: url('/images/goodway.png');
   background-size: contain;
@@ -176,5 +175,61 @@
 
   .next-arr {
     transform: translateY(180px) translateX(500px);
+  }
+}
+
+@media (max-width: 720px) {
+  .cases {
+    width: 100%;
+    margin: auto;
+
+    &-title {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+
+    &-btn-sidebar {
+      border: none;
+    }
+
+    &-slider {
+      padding: 0;
+      padding-top: 90px;
+      margin: 0;
+
+      &-name {
+        font-weight: normal;
+        font-size: 16px;
+        margin-top: 250px;
+      }
+
+      &-web {
+        background-position: top;
+        margin-top: 20px;
+      }
+
+      &-design {
+        background-position: top;
+        padding: 0;
+        padding-top: 90px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+      }
+
+      &-item {
+        background-color: rgba(248, 90, 64, 0.49);
+        height: 350px;
+      }
+    }
+  }
+
+  .slider-box-sites {
+    margin-bottom: 60px;
+  }
+
+  .slick-current {
+    background-color: $accent-color;
+    transition: 0.2s;
   }
 }

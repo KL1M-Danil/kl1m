@@ -53,7 +53,7 @@
     }
 
     &-item:nth-child(4) {
-      background-image: url('/images/about4.jpg');
+      background-image: url('/images/about4.png');
       background-size: cover;
     }
 
@@ -99,7 +99,7 @@
 
     align-items: center;
     width: 550px;
-    height: 144px;
+    height: 90px;
     margin-bottom: 40px;
   }
 
@@ -115,8 +115,8 @@
   &-counter {
     background: #c4c4c4;
     height: 100%;
-    width: 85px;
-    line-height: 144px;
+    min-width: 85px;
+    line-height: 90px;
     text-align: center;
     margin: 0;
     border-radius: 15px 0px 0px 15px;
@@ -128,13 +128,19 @@
   }
 
   &-desc {
-    margin-left: 20px;
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
 
     &-item {
       margin-bottom: 10px;
       font-weight: 500;
       font-size: 22px;
-      //color: $second-font-color;
+    }
+
+    & span {
+      font-weight: 900;
     }
   }
 
@@ -149,7 +155,7 @@
 
   &-techbox {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0;
     margin-bottom: 40px;
@@ -157,6 +163,10 @@
 
   &-techimg {
     margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &-btn-box {
@@ -255,6 +265,7 @@
   background: rgba(0, 0, 0, 0.8);
   text-align: center;
   vertical-align: middle;
+
   .modal {
     background: white;
     padding: 20px;
@@ -263,23 +274,15 @@
     font-weight: 300;
     position: relative;
 
-    // & img {
-    //   height: 800px;
-    //   width: 1000px;
-    // }
+    & img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
 .modal-active {
   overflow: hidden;
-}
-
-@media (max-width: 1480px) {
-  .about {
-    &-wrap {
-      max-width: 1350px;
-    }
-  }
 }
 
 @keyframes unfoldIn {
@@ -321,5 +324,104 @@
   }
   100% {
     transform: scale(0);
+  }
+}
+
+@media (max-width: 1480px) {
+  .about {
+    &-wrap {
+      max-width: 1350px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .about {
+    &-wrap {
+      padding: 50px 0;
+    }
+
+    &-title {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+
+    &-box {
+      flex-direction: column;
+    }
+
+    &-text {
+      width: 90%;
+      margin: auto;
+    }
+
+    &-list {
+      width: 100%;
+    }
+
+    &-item {
+      width: 100%;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    &-item:nth-child(4) {
+      transform: rotate(90deg);
+    }
+
+    &-counter {
+      line-height: 80px;
+      min-width: 60px;
+    }
+
+    &-desc {
+      margin-left: 10px;
+      font-size: 16px;
+
+      &-item {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &-photo {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 20px;
+
+      &-item {
+        background-size: cover;
+        min-height: 400px;
+      }
+
+      &-text {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      & .slick-current {
+        background-color: transparent;
+      }
+    }
+
+    &-techname {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    &-techimg {
+      margin-right: 10px;
+
+      & img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    &-btn {
+      width: 100px;
+    }
   }
 }

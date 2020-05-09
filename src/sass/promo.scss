@@ -198,30 +198,82 @@
       display: none;
     }
   }
+
+  .nav-list-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 720px) {
   .promo {
+    &-nav {
+      padding-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    &-subtitle {
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    &-description {
+      font-size: 16px;
+      margin-bottom: 5px;
+      line-height: 125%;
+    }
+
+    &-logo {
+      margin-left: 15px;
+    }
+
+    &-sidebar {
+      width: 90%;
+      margin: auto;
+    }
+
     &-sidebar:nth-child(2) {
       display: none;
     }
 
     &-macbook {
       height: 200px;
+      width: 200px;
+      margin: auto;
+      margin-bottom: 20px;
     }
 
     &-img-elipse {
-      width: 172px;
+      width: 200px;
+      margin: auto;
     }
 
     &-img-shadow {
-      width: 172px;
+      width: 200px;
+      margin: auto;
       position: absolute;
     }
 
     &-img-mockup {
-      width: 172px;
+      width: 200px;
+      margin: auto;
       position: absolute;
+    }
+
+    &-icon {
+      width: 40px;
+      height: 40px;
+
+      &-cybersafty {
+        width: 55px;
+        height: 40px;
+        margin-right: 20px;
+      }
     }
 
     &-nav-list {
@@ -233,6 +285,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+
       width: 40px;
       height: 40px;
       padding: 0;
@@ -240,32 +293,47 @@
       z-index: 101;
       outline: none;
       margin-right: 15px;
-      transition: 0.2s;
-
-      & img {
-        width: 40px;
-        height: 40px;
-      }
     }
-
-    &-nav-list-mobile {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      z-index: 100;
-      background-color: #000;
-      color: $font-color;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+  }
+  .border-for-wrap {
+    height: 50px;
   }
 
   .nav-burger-closed {
     background-image: url('/images/menu-closed.svg');
-    transition: 0.2s;
+    top: 20px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    //transition: 0.2s;
+  }
+
+  .nav-list-mobile {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 110%;
+    text-align: center;
+    z-index: 100;
+    background-color: #000;
+    color: $font-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 68%;
+    padding: 0;
+  }
+
+  .nav-item {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 26px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .nav-closed {
